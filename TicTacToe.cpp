@@ -69,7 +69,7 @@ int main(){
         cin>>slot;
         if (isdigit(slot)){
             s = slot - '0';
-            cout<<'\n'<<s<<'\n';
+            cout<<'\n Selected Slot is ='<<s<<'\n';
         } else {
             --i;
             continue;
@@ -89,10 +89,12 @@ int main(){
         // Cal winner
         winner = winnerfn();
         if (winner != ' '){
+            drawboard();
             cout<<"Congrats: The winner is "<<winner;
             return 0;
-            }
+        }
     }
+    drawboard();
     cout<<"Tie Game";
     
     return 0;
