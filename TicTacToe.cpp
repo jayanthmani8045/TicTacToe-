@@ -83,16 +83,17 @@ int main(){
             continue;
         }
 
-    // Place marker
-    placemarker(s); 
+        // Place marker
+        placemarker(s); 
 
-    // Cal winner
-    winner = winnerfn();
-    if (winner != ' '){
-        cout<<"Congrats: The winner is "<<winner;
-        return 0;
-        }
+        // Cal winner
+        winner = winnerfn();
+        if (winner != ' '){
+            cout<<"Congrats: The winner is "<<winner;
+            return 0;
+            }
     }
+    cout<<"Tie Game";
     
     return 0;
 }
